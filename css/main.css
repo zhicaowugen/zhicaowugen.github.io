@@ -1684,7 +1684,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f5ff6c;
+  background: #a896ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2530,4 +2530,10 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+* {
+  cursor: url("http://pga57uzdl.bkt.clouddn.com/shubiao.ico"), auto !important;
+}
+:active {
+  cursor: url("http://pga57uzdl.bkt.clouddn.com/shubiao.ico"), auto !important;
 }
