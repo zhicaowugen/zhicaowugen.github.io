@@ -98,7 +98,7 @@
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/fastbin%20attack/2.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/fastbin%20attack/3.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/unsafe%20unlink/2.jpg">
-<meta property="og:updated_time" content="2019-03-21T14:04:52.646Z">
+<meta property="og:updated_time" content="2019-03-21T14:07:00.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="fastbin attack">
 <meta name="twitter:description" content="fastbin attack前置知识： bins： 就是空闲列表数据结构。它们用以保存 free chunks。  当分配的内存区域 free 掉时，其并不会立即归还给操作系统，而仅仅是移交给了作为库函数的分配器。这块 free 掉的内存添加在了「main arenas bin」中 （在 glibc malloc 中，空闲列表数据结构被称为「bin」），随后当用户请求内存时，分配器就不再向内核申请">
@@ -352,6 +352,7 @@
 <li>构造伪chunk结构</li>
 <li>进行分配达到任意地址写的目的</li>
 </ol>
+<p>———————————————————————待续———————————————————————</p>
 
       
     </div>
