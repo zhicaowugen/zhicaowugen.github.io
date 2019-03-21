@@ -91,14 +91,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="fastbin attack">
 <meta property="og:url" content="http://yoursite.com/2018/11/26/fastbin attack/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="MZ的博客%-%">
 <meta property="og:description" content="fastbin attack前置知识： bins： 就是空闲列表数据结构。它们用以保存 free chunks。  当分配的内存区域 free 掉时，其并不会立即归还给操作系统，而仅仅是移交给了作为库函数的分配器。这块 free 掉的内存添加在了「main arenas bin」中 （在 glibc malloc 中，空闲列表数据结构被称为「bin」），随后当用户请求内存时，分配器就不再向内核申请">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/fastbin%20attack/1.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/fastbin%20attack/2.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/fastbin%20attack/3.png">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/unsafe%20unlink/2.jpg">
-<meta property="og:updated_time" content="2019-03-21T13:08:01.082Z">
+<meta property="og:updated_time" content="2019-03-21T14:01:18.164Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="fastbin attack">
 <meta name="twitter:description" content="fastbin attack前置知识： bins： 就是空闲列表数据结构。它们用以保存 free chunks。  当分配的内存区域 free 掉时，其并不会立即归还给操作系统，而仅仅是移交给了作为库函数的分配器。这块 free 掉的内存添加在了「main arenas bin」中 （在 glibc malloc 中，空闲列表数据结构被称为「bin」），随后当用户请求内存时，分配器就不再向内核申请">
@@ -136,7 +136,7 @@
 
 
 
-  <title> fastbin attack | Hexo </title>
+  <title> fastbin attack | MZ的博客%-% </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -172,7 +172,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">MZ的博客%-%</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -258,13 +258,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/fastbin attack/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="MZ">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="MZ的博客%-%">
     </span>
 
     
@@ -331,6 +331,7 @@
 <p>bins： 就是空闲列表数据结构。它们用以保存 free chunks。 </p>
 <p>当分配的内存区域 <code>free</code> 掉时，其并不会立即归还给操作系统，而仅仅是移交给了作为库函数的分配器。这块 <code>free</code> 掉的内存添加在了「main arenas bin」中 （在 glibc malloc 中，空闲列表数据结构被称为「bin」），随后当用户请求内存时，分配器就不再向内核申请新堆了，而是先试着各个bin中查找空闲内存。只有当 bin 中不存在空闲内存时，分配器才会继续向内核申请内存。  ；</p>
 <p>fastbin：为了快速重新分配回内存而存在的一个结构 ，是一个单链表结构；</p>
+<a id="more"></a> 
 <p>我们一般熟悉的堆都是双链表的chunk，但是对于大小为(<strong>16 Bytes~ 64 Bytes</strong>)的堆块来说则是使用fastbin来进行管理的 ，当分配一块较小的内存时，会首先检查对应大小的fastbin中是否包含未被使用的chunk，如果存在则直接将其从fastbin中移除并返回；否则通过其他方式得到一块符合大小要求的chunk并返回；</p>
 <p>正在使用中的fastbin块的结构 ：</p>
 <p><img src="D:\bolg\hexo\source\_posts\fastbin attack\1.png" alt=""></p>
@@ -460,8 +461,8 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
+               alt="MZ" />
+          <p class="site-author-name" itemprop="name">MZ</p>
            
               <p class="site-description motion-element" itemprop="description"></p>
           
@@ -536,7 +537,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">MZ</span>
 </div>
 
 

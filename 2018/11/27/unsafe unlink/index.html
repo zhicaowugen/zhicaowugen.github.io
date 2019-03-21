@@ -91,11 +91,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="unsafe unlink">
 <meta property="og:url" content="http://yoursite.com/2018/11/27/unsafe unlink/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="MZ的博客%-%">
 <meta property="og:description" content="前置知识： 堆的chunk的结构： 1234567891011121314已分配的堆块：    chunk-&amp;gt; +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+        |                  前块的大小，如果分配的话                     | |        +-+-+">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="d:/bolg/hexo/source/_posts/unsafe%20unlink/3.jpg">
-<meta property="og:updated_time" content="2019-03-21T13:48:32.682Z">
+<meta property="og:updated_time" content="2019-03-21T14:00:57.813Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="unsafe unlink">
 <meta name="twitter:description" content="前置知识： 堆的chunk的结构： 1234567891011121314已分配的堆块：    chunk-&amp;gt; +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+        |                  前块的大小，如果分配的话                     | |        +-+-+">
@@ -133,7 +133,7 @@
 
 
 
-  <title> unsafe unlink | Hexo </title>
+  <title> unsafe unlink | MZ的博客%-% </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -169,7 +169,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">MZ的博客%-%</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -255,13 +255,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/27/unsafe unlink/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="MZ">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="MZ的博客%-%">
     </span>
 
     
@@ -331,6 +331,7 @@
 <p>chunk：该 Allocated chunk 的起始地址；</p>
 <p>mem：该 Allocated chunk 中用户可用区域的起始地址（= chunk + sizeof(malloc_chunk)）；</p>
 <p>next_chunk：下一个 chunck（无论类型）的起始地址。</p>
+<a id="more"></a> 
 <p>图中结构体内部各字段的含义依次为：</p>
 <p>prev_size：若上一个 chunk 可用，则此字段赋值为上一个 chunk 的大小；否则，此字段被用来存储上一个 chunk 的用户数据；</p>
 <p>size：此字段赋值本 chunk 的大小，其最后三位包含标志信息： </p>
@@ -441,8 +442,8 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
+               alt="MZ" />
+          <p class="site-author-name" itemprop="name">MZ</p>
            
               <p class="site-description motion-element" itemprop="description"></p>
           
@@ -501,7 +502,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">MZ</span>
 </div>
 
 
